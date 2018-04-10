@@ -57,7 +57,7 @@ resource "aws_iam_role_policy_attachment" "policy-attachment" {
 data "archive_file" "fitbit-pi0-get-steps-zip" {
   type        = "zip"
   source_dir = "fitbit-pi0-get-steps/"
-  output_path = "fitibit-pi0-get-steps.zip"
+  output_path = "fitbit-pi0-get-steps.zip"
 }
 
 resource "aws_lambda_function" "lambda-fitbit-pi0-get-steps" {
